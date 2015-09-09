@@ -5,6 +5,8 @@ page web application that provides a random set of black and white cards from th
 [Cards Against Humanity](http://cardsagainsthumanity.com). They provide their content under a Creative Commons license
 and I have provided a collection of their card data pulled from their web site. 
 
+![Screenshot](cards-screen.png "Screenshot")
+
 ## Build
 
     ./gradlew clean build
