@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards Against Boredom</title>
+        <link href="/images/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="/styles/cards.css" />
+    </head>
+    <body>
+        <h1>Cards Against Boredom</h1>
+
+        <div class="black-card">
+            ${model.black.text}
+        </div>
+
+        <% model.whites.each { white-> %>
+            <div class="white-card">
+                ${white.text}
+            </div>
+        <% } %>
+    </body>
+</html>
