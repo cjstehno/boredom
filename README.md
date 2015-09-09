@@ -1,48 +1,14 @@
-Ratpack project template
------------------------------
+# Cards Against Boredom
 
-You have just created a basic Groovy Ratpack application. It doesn't do much
-at this point, but we have set you up with a standard project structure, a 
-Guice back Registry, simple home page, and Spock for writing tests (because 
-you'd be mad not to use it).
+This is a demo application I am playing with to learn [Ratpack](http://ratpack.io) development. It is a simple single-
+page web application that provides a random set of black and white cards from the card game 
+[Cards Against Humanity](http://cardsagainsthumanity.com). They provide their content under a Creative Commons license
+and I have provided a collection of their card data pulled from their web site. 
 
-In this project you get:
+## Build
 
-* A Gradle build file with pre-built Gradle wrapper
-* A tiny home page at src/ratpack/templates/index.html (it's a template)
-* A routing file at src/ratpack/Ratpack.groovy
-* Reloading enabled in build.gradle
-* A standard project structure:
-
-    <proj>
-      |
-      +- src
-          |
-          +- ratpack
-          |     |
-          |     +- Ratpack.groovy
-          |     +- ratpack.properties
-          |     +- public // Static assets in here
-          |          |
-          |          +- images
-          |          +- lib
-          |          +- scripts
-          |          +- styles
-          |
-          +- main
-          |   |
-          |   +- groovy
-                   |
-                   +- // App classes in here!
-          |
-          +- test
-              |
-              +- groovy
-                   |
-                   +- // Spock tests in here!
-
-That's it! You can start the basic app with
+    ./gradlew clean build
+    
+## Running Locally
 
     ./gradlew run
-
-but it's up to you to add the bells, whistles, and meat of the application.
