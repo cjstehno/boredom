@@ -1,5 +1,6 @@
-import cards.CardSelector
+import cards.BlackCardStore
 import cards.CardsModule
+import cards.WhiteCardStore
 import ratpack.groovy.template.TextTemplateModule
 
 import static ratpack.groovy.Groovy.groovyTemplate
@@ -12,9 +13,9 @@ ratpack {
     }
 
     handlers {
-        get { CardSelector cards ->
-            def black = cards.drawBlack()
-            def whites = cards.drawWhite(black.blanks)
+        get { WhiteCardStore whiteCards, BlackCardStore blackCards->
+            def black = blackCards.draw()
+            def whites = whiteCards.draw(black.blanks)
 
             render groovyTemplate("index.html", black: black, whites: whites)
         }

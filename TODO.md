@@ -1,6 +1,10 @@
-- simple UI to randomly select black and white cards for display
-- cards stored in DB (Groovy SQL or Effigy)
-- use Guice for wiring
+- setup database (flyway?) H2
+- load the cards (provide script or loader)
 
-- module for CardsAgainstBoredom
-    - selects card
+- ensure docs have proper attribution
+
+- provide interface to add new black/white cards
+
+- push to heroku
+
+- microservice version with hystrix and stuff
