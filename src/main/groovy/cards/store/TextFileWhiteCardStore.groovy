@@ -1,10 +1,15 @@
+/*
+    Licensed under:
+    Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic
+    https://creativecommons.org/licenses/by-nc-sa/2.0/
+*/
 package cards.store
 
 import cards.WhiteCard
 import groovy.util.logging.Slf4j
 
 /**
- * FIXME: document me
+ * Defines the text-file-based card store for white cards.
  */
 @Slf4j
 class TextFileWhiteCardStore implements WhiteCardStore, CardStore<WhiteCard> {

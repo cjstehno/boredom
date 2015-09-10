@@ -1,9 +1,14 @@
+/*
+    Licensed under:
+    Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic
+    https://creativecommons.org/licenses/by-nc-sa/2.0/
+*/
 package cards
 
 import groovy.transform.Canonical
 
 /**
- * FIXME: document me
+ * Represents a white (answer) card.
  */
 @Canonical
 class WhiteCard implements Card {
