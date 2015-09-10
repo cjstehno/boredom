@@ -2,7 +2,7 @@
 .black-card {
     font-family: sans-serif;
     background-color: black;
-    color:white;
+    color: white;
     width: 150px;
 
     border-radius: 25px;
@@ -14,7 +14,7 @@
 .white-card {
     font-family: sans-serif;
     background-color: white;
-    color:black;
+    color: black;
     width: 150px;
 
     border-radius: 25px;
@@ -22,4 +22,20 @@
     padding: 20px;
     width: 200px;
     height: 150px;
+}
+
+.cya {
+    margin-top: 10px;
+    padding: 4px;
+    border: 1px dashed gray;
+}
+
+.cya span {
+    font-weight: bold;
+    font-size: small;
+}
+
+.cya p {
+    font-style: italic;
+    font-size: small;
 }
