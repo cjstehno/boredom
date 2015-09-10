@@ -15,7 +15,7 @@ import javax.inject.Inject
 import static ratpack.groovy.Groovy.groovyTemplate
 
 /**
- * FIXME: document me
+ * Ratpack handler used to handle card requests.
  */
 class CardHandler extends GroovyHandler {
 
@@ -28,7 +28,7 @@ class CardHandler extends GroovyHandler {
             def black = blackCards.draw()
             def whites = whiteCards.draw(black.blanks)
 
-            render groovyTemplate("index.html", black: black, whites: whites)
+            render groovyTemplate('index.html', black: black, whites: whites)
         }
     }
 }
