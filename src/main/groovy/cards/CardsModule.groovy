@@ -23,5 +23,6 @@ class CardsModule extends AbstractModule {
 
         bind(BlackCardStore)
             .toInstance(new TextFileBlackCardStore('/blackcards.txt'))
+
     }
 }

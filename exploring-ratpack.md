@@ -12,6 +12,8 @@ updating the template
 
 (I went a bit far with bootstrap)
 
+(extracting the handler)
+
 testing (unit, functional, ect)
 
 pushing to heroku
