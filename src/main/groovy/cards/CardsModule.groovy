@@ -1,5 +1,9 @@
 package cards
 
+import cards.store.BlackCardStore
+import cards.store.TextFileBlackCardStore
+import cards.store.TextFileWhiteCardStore
+import cards.store.WhiteCardStore
 import com.google.inject.AbstractModule
 
 /**

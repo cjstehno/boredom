@@ -1,10 +1,7 @@
-- setup database (flyway?) H2
-- load the cards (provide script or loader)
 
-- ensure docs have proper attribution
-
-- provide interface to add new black/white cards
+- explore ratpack testing options
 
 - push to heroku
 
+- use database (postgres) as optional data store
 - microservice version with hystrix and stuff

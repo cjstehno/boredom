@@ -1,4 +1,6 @@
-package cards
+package cards.store
+
+import cards.BlackCard
 
 /**
  * FIXME: document me

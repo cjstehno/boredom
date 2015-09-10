@@ -1,6 +1,6 @@
-import cards.BlackCardStore
+import cards.store.BlackCardStore
 import cards.CardsModule
-import cards.WhiteCardStore
+import cards.store.WhiteCardStore
 import ratpack.groovy.template.TextTemplateModule
 
 import static ratpack.groovy.Groovy.groovyTemplate
