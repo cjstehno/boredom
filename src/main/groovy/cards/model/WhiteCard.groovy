@@ -3,15 +3,15 @@
     Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic
     https://creativecommons.org/licenses/by-nc-sa/2.0/
 */
-package cards
+package cards.model
+
+import groovy.transform.Canonical
 
 /**
- * Trait used to define a card.
+ * Represents a white (answer) card.
  */
-trait Card {
+@Canonical
+class WhiteCard implements Card {
 
-    /**
-     * The textual content of the card.
-     */
-    String text
 }
+

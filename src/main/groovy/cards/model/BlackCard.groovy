@@ -3,7 +3,7 @@
     Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic
     https://creativecommons.org/licenses/by-nc-sa/2.0/
 */
-package cards
+package cards.model
 
 import groovy.transform.Canonical
 

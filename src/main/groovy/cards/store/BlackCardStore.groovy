@@ -5,7 +5,7 @@
 */
 package cards.store
 
-import cards.BlackCard
+import cards.model.BlackCard
 
 /**
  * Defines the requirements for a black card store.

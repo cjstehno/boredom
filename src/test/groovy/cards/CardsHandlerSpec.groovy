@@ -5,6 +5,8 @@
 */
 package cards
 
+import cards.model.BlackCard
+import cards.model.WhiteCard
 import cards.store.BlackCardStore
 import cards.store.WhiteCardStore
 import ratpack.groovy.template.TextTemplate

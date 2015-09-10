@@ -5,7 +5,7 @@
 */
 package cards.store
 
-import cards.WhiteCard
+import cards.model.WhiteCard
 import groovy.util.logging.Slf4j
 
 /**

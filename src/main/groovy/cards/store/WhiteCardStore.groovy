@@ -5,7 +5,7 @@
 */
 package cards.store
 
-import cards.WhiteCard
+import cards.model.WhiteCard
 
 /**
  * Defines the requirements for a white card store.
