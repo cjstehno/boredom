@@ -18,7 +18,13 @@ the following:
     
 ## Running Locally
 
+To run the server locally:
+
     ./gradlew run
+    
+or, with continuous reload (on change):
+    
+    ./gradlew -t run
 
 ## Attribution
 
