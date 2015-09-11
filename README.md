@@ -25,6 +25,19 @@ To run the server locally:
 or, with continuous reload (on change):
     
     ./gradlew -t run
+    
+## Publish to Heroku
+
+This is mostly for my use or general information, but you need an account on heroku and you need their tools downloaded
+for your specific OS. Then:
+
+   heroku login
+   
+to login and once you are ready to push and have all changes committed:
+   
+   git push heroku master
+   
+which should push to the heroku server.
 
 ## Attribution
 

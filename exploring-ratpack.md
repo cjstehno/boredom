@@ -7,6 +7,8 @@ build/run
 about the game
 
 wiring the module and service points
+- a bit more "designed" that needs to be but trying to actually have something somewhat interesting and meaningful to
+play with.
 
 updating the template
 
@@ -14,8 +16,10 @@ updating the template
 
 (extracting the handler)
 
-testing (unit, functional, ect)
+unit testing the handler
 
 pushing to heroku
+- tool belt
+- free account
 
 ideas for future (hystrix, real database)
