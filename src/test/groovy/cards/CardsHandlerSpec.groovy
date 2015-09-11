@@ -6,7 +6,7 @@
 package cards
 
 import cards.model.BlackCard
-import cards.model.Deck
+import cards.store.Deck
 import cards.model.WhiteCard
 import ratpack.groovy.template.TextTemplate
 import spock.lang.Specification

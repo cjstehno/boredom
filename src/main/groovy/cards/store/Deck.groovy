@@ -1,4 +1,4 @@
-package cards.model
+package cards.store
 
 import groovy.transform.CompileStatic
 

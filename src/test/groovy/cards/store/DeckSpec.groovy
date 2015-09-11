@@ -1,5 +1,7 @@
-package cards.model
+package cards.store
 
+import cards.model.WhiteCard
+import cards.store.Deck
 import spock.lang.Specification
 
 class DeckSpec extends Specification {
