@@ -5,16 +5,24 @@
 */
 package cards.model
 
-import groovy.transform.Canonical
+import groovy.transform.Immutable
 
 /**
  * Represents a black (question) card.
  */
-@Canonical
+@Immutable
 class BlackCard implements Card {
+
+    String text
 
     /**
      * The number of answer blanks presented by the question.
      */
     int blanks
+
+    static Closure factory(){
+        return { line->
+            new BlackCard(text: line.trim(), blanks: line.count('__________') ?: 1)
+        }
+    }
 }

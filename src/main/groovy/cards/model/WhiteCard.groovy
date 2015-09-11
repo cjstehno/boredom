@@ -5,13 +5,20 @@
 */
 package cards.model
 
-import groovy.transform.Canonical
+import groovy.transform.Immutable
 
 /**
  * Represents a white (answer) card.
  */
-@Canonical
+@Immutable
 class WhiteCard implements Card {
 
+    String text
+
+    static Closure factory(){
+        return { line->
+            new WhiteCard(text: line.trim())
+        }
+    }
 }
 

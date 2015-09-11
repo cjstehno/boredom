@@ -5,11 +5,12 @@
 */
 package cards
 
-import cards.store.BlackCardStore
-import cards.store.TextFileBlackCardStore
-import cards.store.TextFileWhiteCardStore
-import cards.store.WhiteCardStore
+import cards.model.BlackCard
+import cards.model.Deck
+import cards.model.WhiteCard
+import cards.store.DeckLoader
 import com.google.inject.AbstractModule
+import com.google.inject.Provides
 
 /**
  * Guice module used to configure the CardStore instances.
@@ -18,7 +19,21 @@ class CardsModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        bind(WhiteCardStore).toInstance(new TextFileWhiteCardStore('/whitecards.txt'))
-        bind(BlackCardStore).toInstance(new TextFileBlackCardStore('/blackcards.txt'))
+    }
+
+    @Provides
+    Deck<WhiteCard> provideWhiteCardDeck() {
+        new DeckLoader<WhiteCard>().load(
+            CardsModule.getResource('/whitecards.txt'),
+            WhiteCard.factory()
+        )
+    }
+
+    @Provides
+    Deck<BlackCard> provideBlackCardDeck() {
+        new DeckLoader<BlackCard>().load(
+            CardsModule.getResource('/blackcards.txt'),
+            BlackCard.factory()
+        )
     }
 }

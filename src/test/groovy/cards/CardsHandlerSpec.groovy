@@ -6,9 +6,8 @@
 package cards
 
 import cards.model.BlackCard
+import cards.model.Deck
 import cards.model.WhiteCard
-import cards.store.BlackCardStore
-import cards.store.WhiteCardStore
 import ratpack.groovy.template.TextTemplate
 import spock.lang.Specification
 
@@ -19,8 +18,8 @@ class CardsHandlerSpec extends Specification {
     private static final BlackCard BLACK_CARD = new BlackCard(text: 'Why am I sticky?', blanks: 1)
     private static final WhiteCard WHITE_CARD = new WhiteCard(text: 'Middle-class white guys.')
 
-    private WhiteCardStore whiteCards = Mock(WhiteCardStore)
-    private BlackCardStore blackCards = Mock(BlackCardStore)
+    private Deck<WhiteCard> whiteCards = new Deck<>([WHITE_CARD])
+    private Deck<BlackCard> blackCards = new Deck<>([BLACK_CARD])
     private CardHandler handler
 
     def setup() {
@@ -28,10 +27,6 @@ class CardsHandlerSpec extends Specification {
     }
 
     def 'handle'() {
-        setup:
-        1 * blackCards.draw() >> BLACK_CARD
-        1 * whiteCards.draw(1) >> [WHITE_CARD]
-
         when:
         def result = handle(handler) {
             uri '/'

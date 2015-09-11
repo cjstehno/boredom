@@ -4,14 +4,13 @@
     https://creativecommons.org/licenses/by-nc-sa/2.0/
 */
 package cards.model
-
 /**
- * Trait used to define a card.
+ * Base class used to define a card.
  */
-trait Card {
+interface Card {
 
     /**
      * The textual content of the card.
      */
-    String text
+    String getText()
 }

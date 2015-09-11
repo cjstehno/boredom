@@ -5,8 +5,9 @@
 */
 package cards
 
-import cards.store.BlackCardStore
-import cards.store.WhiteCardStore
+import cards.model.BlackCard
+import cards.model.Deck
+import cards.model.WhiteCard
 import ratpack.groovy.handling.GroovyContext
 import ratpack.groovy.handling.GroovyHandler
 
@@ -19,8 +20,8 @@ import static ratpack.groovy.Groovy.groovyTemplate
  */
 class CardHandler extends GroovyHandler {
 
-    @Inject WhiteCardStore whiteCards
-    @Inject BlackCardStore blackCards
+    @Inject Deck<WhiteCard> whiteCards
+    @Inject Deck<BlackCard> blackCards
 
     @Override
     protected void handle(GroovyContext context) {
