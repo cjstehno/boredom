@@ -43,6 +43,7 @@ which should push to the heroku server.
 
 The Cards Against Humanity card data was pulled from files provided on their web site:
 
+* http://www.cardsagainsthumanity.com/wcards.txt 
 * http://www.cardsagainsthumanity.com/bcards.txt 
 * http://www.cardsagainsthumanity.com/bcards1.txt 
 * http://www.cardsagainsthumanity.com/bcards2.txt
