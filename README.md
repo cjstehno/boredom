@@ -10,7 +10,7 @@ A live version of the application is deployed on a free-tier of [Heroku](http://
 account, it may be down or slow to start up due to usage restrictions (be patient). What you will see, should look like
 the following:
 
-![Screenshot](cards-screen.png "Screenshot")
+<img src="/cards-screen.png" border="1" />
 
 ## Build
 
