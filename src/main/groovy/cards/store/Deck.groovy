@@ -1,14 +1,15 @@
 package cards.store
 
 import groovy.transform.CompileStatic
+import groovy.util.logging.Slf4j
 
 import java.util.concurrent.locks.ReadWriteLock
 import java.util.concurrent.locks.ReentrantReadWriteLock
 
 /**
- * FIXME: document me
+ * Represents the deck of cards (either white or black).
  */
-@CompileStatic
+@CompileStatic @Slf4j
 class Deck<T> {
 
     private final ReadWriteLock locker = new ReentrantReadWriteLock()
@@ -16,7 +17,7 @@ class Deck<T> {
     private int nextCard = 0
 
     Deck(final Collection<T> cards) {
-        this.cards = new LinkedList<T>(cards)
+        this.cards.addAll(new LinkedList<T>(cards))
         shuffle()
     }
 
@@ -51,6 +52,8 @@ class Deck<T> {
     }
 
     private void shuffle() {
+        log.info 'Shuffling the {} deck', cards[0].class.simpleName
+
         Collections.shuffle(cards)
         nextCard = 0
     }

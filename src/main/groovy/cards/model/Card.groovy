@@ -4,6 +4,7 @@
     https://creativecommons.org/licenses/by-nc-sa/2.0/
 */
 package cards.model
+
 /**
  * Base class used to define a card.
  */
